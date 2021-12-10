@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    min-height: 70vh;
+    max-width: 70vh;
+    margin-left: 15vh;
+    margin-top: 15vh;
+    grid-template-areas:
+      "result result result result"
+      "ac ac delete delete"
+      "seven eight nine times"
+      "four five six less"
+      "one two three plus"
+      "point zero equal divide";
+}
+  
+.ac { grid-area: ac; }
+
+.result { 
+    grid-area: result; 
+}
+
+.nine { grid-area: nine; }
+
+.eight { grid-area: eight; }
+
+.seven { grid-area: seven; }
+
+.six { grid-area: six; }
+
+.five { grid-area: five; }
+
+.four { grid-area: four; }
+
+.three { grid-area: three; }
+
+.two { grid-area: two; }
+
+.one { grid-area: one; }
+
+.zero { grid-area: zero; }
+
+.point { grid-area: point; }
+
+.equal { grid-area: equal; }
+
+.plus { grid-area: plus; }
+
+.less { grid-area: less; }
+
+.times { grid-area: times; }
+
+.divide { grid-area: divide; }
+
+.delete { grid-area: delete; }
+  
+
+.calculator button{
+    background-color: darksalmon;
+    border: 0;
+
+}
+
+.calculator button:hover {
+    background-color: salmon;
+}
+
